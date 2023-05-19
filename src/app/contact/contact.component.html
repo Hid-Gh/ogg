@@ -1,0 +1,60 @@
+<nav-bar></nav-bar>
+<div class="wrapper">
+
+   
+   
+    </div>
+<section class="bi">
+    <div class="slider">
+        <div class="mySlides" [style.background]="'url(assets/contact2.jpg)'"></div>
+        <!-- <img src="assets/contact2.jpg" alt="" class="mySlides" id="slideID"> -->
+    </div>
+    <div class="overlay">
+    </div>
+</section>
+
+    <section class="section2">
+        <h1>Contact <strong>US</strong></h1>
+     </section>
+    <!-- ---------------------------info -->
+    <div class="contact-col">
+        <div>
+            <div>
+            <div>
+            <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)"><div>
+            <label for="EmailAddress">Email</label>
+            <input type="email" name="EmailAddress" placeholder="Enter email" formControlName="Email">
+            </div>
+            <div>
+            <label for="body">Comment</label>
+            <textarea formControlName="Body" name="Body">
+            </textarea>
+            </div>
+            <button type="submit" [disabled]="!FormData.valid" class="btn">Submit</button>
+            </form>
+            </div>
+            </div>
+            </div>
+            
+ </div>
+
+ <section class="location">
+    <h1>Our Location</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15763.356544493798!2d38.72203642590644!3d8.986945996799914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b869a8b536055%3A0x153e64699102a723!2sMekanisa%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1671268197684!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+<!-- ------------------Location------------------------- -->
+
+<!-- -------------contact u----------------- -->
+<section class="light">
+    
+    <a href="">    <img src="assets/instagram.png" ></a>
+    <a href="">    <img src="assets/facebook.png" ></a>
+    <a href="">    <img src="assets/twitter.png" ></a><br>
+    <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+        <p class="mb-1">&copy; 2017–2023 OGG</p>
+      </footer>
+</section>
+
+
+

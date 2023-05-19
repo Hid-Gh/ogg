@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css"; 
+
+/* @media(min-width){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   
+} */
+
+body 
+{
+    /* background: url(assets/backgroundMain.jpg); */
+}

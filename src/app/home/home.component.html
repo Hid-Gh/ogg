@@ -1,0 +1,98 @@
+<div class="main">
+
+    <div class="top">
+               <div class="logo">
+                      <img src="assets/logo.png" alt="" >
+               </div>
+                <div class="menu">
+                            <a routerLink="/products" id="links">Menu</a> 
+                </div>
+                <div class="contact">
+                           <a routerLink="/contacts"  id="links">Contact</a>
+                </div>
+                
+    
+    </div>      
+   
+    <h2>You are what you eat,<br/>
+                &nbsp; and so is your brain.</h2>
+    <p class="p"> Meet your nutritional needs<br/> while still enjoying delicious foods<br/> with these tasty morsels!</p>
+    <div class="cards" >
+      <div class="card" style="width: 15rem;height:15rem;" (click)="navigateToMenu()">
+        <div class="card-body">
+        <img src="/assets/koreanSoup.png" style="width:11rem;height:11rem;position:relative;top:-6rem;left:1rem">
+        <h6 class="card-subtitle mb-2 text-muted" style="position:relative;top:-5rem;left:3.5rem">Korean Soup</h6>
+        <h6 style="font-size:10px;position:relative;top:-3rem;left:2.5rem;color: #4b5c3f">504 calories &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Soup</h6>
+        <h5 style="position:relative;top:-2rem;left:5rem;color: #4b5c3f">$28</h5>
+        </div>
+</div>
+                <div class="card" style="width: 15rem;height:15rem;" (click)="navigateToMenu()">
+                            <div class="card-body">
+                            <img src="assets/tropicalAcaciaBowl.png" style="width:11rem;height:11rem;position:relative;top:-6rem;left:1rem;">
+                            <h6 class="card-subtitle mb-2 text-muted" style="position:relative;top:-5rem;left:3.5rem">Acacia Bowl</h6>
+                            <h6 style="font-size:10px;position:relative;top:-3rem;left:2.5rem;color: #4b5c3f">410 calories &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Breakfast</h6>
+                            <h5 style="position:relative;top:-2rem;margin-left:5rem;color: #4b5c3f">$29</h5>
+                            </div>
+                </div>
+                <div class="card" style="width: 15rem;height:15rem;" (click)="navigateToMenu()">
+                  <div class="card-body">
+                  <img src="/assets/spicyKoreanNoodles.jpg" style="width:12rem;height:14rem;position:relative;top:-8rem;left:0.5rem">
+                  <h6 class="card-subtitle mb-2 text-muted" style="position:relative;top:-8rem;left:3.5rem">Spicy Noodles</h6>
+                  <h6 style="font-size:10px;position:relative;top:-6rem;left:2.5rem;color: #4b5c3f">290 calories &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pasta</h6>
+                  <h5 style="position:relative;top:-5rem;margin-left:5rem;color: #4b5c3f">$18</h5>
+                  </div>
+             </div>
+             <div class="card" style="width: 15rem;height:15rem;" (click)="navigateToMenu()">
+              <div class="card-body">
+              <img src="assets/tropicalFruitSalad.png" style="width:11rem;height:11rem;position:relative;top:-6rem;left:1.2rem">
+              <h6 class="card-subtitle mb-2 text-muted" style="position:relative;top:-5rem;margin-left:3.5rem">Fruit Bowl</h6>
+              <h6 style="font-size:10px;position:relative;top:-3rem;margin-left:2.5rem;color: #4b5c3f">140 calories &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dessert</h6>
+              <h5 style="position:relative;top:-2rem;margin-left:5rem;color: #4b5c3f">$40</h5>
+              </div>
+  </div>
+    </div>
+    
+</div>
+  <!-- <div class="row">
+                   <div class="col-md-6">
+                               <form #f="ngForm" (ngSubmit)= "create(f.value)">
+                                  <div class="form-group">
+                                      <label for="title">Title</label>
+                                        <input #title="ngModel" [(ngModel)]= "product.title" name="title" id="title" type="text" class="form-control" >
+                                 </div>
+                          
+                                   <div class="form-group">
+                                      <label for="price">Price</label>
+                                        <div class="input-group mb-3">
+                                      
+                                      <span class="input-group-text">$</span>
+                                      <input #price="ngModel" [(ngModel)]= "product.price"  name="price" type="text" class="form-control" required [min]="0" >
+                                    </div>
+                                      
+                                    <div class="form-group">
+                                        <label for="title">Category</label>
+                                        
+                                          <input #title="ngModel" [(ngModel)]= "product.category" name="category" id="category" type="text" class="form-control" >
+                                    </div>
+                                     <div class="form-group">
+                                        <label for="title">Calories</label>
+                                        
+                                          <input #title="ngModel" [(ngModel)]= "product.calories" name="calories" id="calories" type="text" class="form-control" >
+                                   </div>
+                                     <div class="form-group">
+                                        <label for="title">Orders</label>
+                                        
+                                          <input #title="ngModel" [(ngModel)]= "product.orders" name="orders" id="orders" type="orders" class="form-control" >
+                                   </div>
+                                   </div>
+                          
+                                   <div class="form-group">
+                                      <label for="imageUrl">Image URL</label>
+                                      <input #imageUrl="ngModel" [(ngModel)]= "product.imageUrl" name="imageUrl" id="imageUrl" type="text" class="form-control" required url>
+                                   </div>
+                                   <button class="btn btn-primary" >Save</button>
+                                  
+                          </form>
+                         </div> 
+                          -->
+                         

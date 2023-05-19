@@ -1,0 +1,25 @@
+<nav-bar></nav-bar>
+<product-fillter [category]="category"></product-fillter>
+<li class="nav-item" id="search">
+    <form class="w-70 me-5" role="search">
+    <input 
+    #query
+    (keyup)="filterProduct(query.value)"
+    type="search" class="form-control" placeholder="Search..." aria-label="Search" >
+  </form>
+  
+  </li>
+
+  
+  <div class="col">
+    <div class="row row-cols-1 row-cols-md-3 g-4"  >
+        <ng-container *ngFor="let p of filteredProducts" >
+            <div class="col">
+                <product-card [product]="p"   [shoppingCart]="cart "></product-card>
+    
+            </div>
+        </ng-container>
+    </div>
+  </div>
+
+

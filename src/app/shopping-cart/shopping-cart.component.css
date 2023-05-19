@@ -1,0 +1,101 @@
+.card {
+    margin: 50px;
+    margin-top: 130px;
+    margin-left: 30%;
+    box-shadow: 10px 10px 10px #5f7550;
+
+}
+.cart{
+    text-shadow: 10px 10px 10px  #5f7550;
+    margin: 30px;
+    margin-left: 100px;
+
+
+}
+
+.btn{
+    background-color: #373738;
+    border: 1px solid #8bab76;
+    color: #fff;
+    width: 160px;
+    line-height: 40px;
+    border-radius: 25px;
+    /* margin-top: -400px; */
+    margin-left: 100px;
+    margin-bottom: 90px;
+    box-shadow: 10px 10px 10px #5f7550;
+}
+#check-out{
+    margin-left: 150px;
+
+}
+
+input{
+    display: none;
+}
+
+#check-out-guest,#check-out-member{
+    margin-left: 100px;
+    margin-top: -60px;
+    display: none;
+}
+
+#check-out:checked ~ a{
+        display: block;
+}
+
+.total{
+    position: absolute;
+    margin-left: 70px;
+    font-size: 40px;
+
+}
+
+#check{
+    position: absolute;
+    margin-left: 270px;
+}
+
+@media(max-width:700px){
+    .total{
+        position: absolute;
+        margin-left: 80px;
+        font-size: 40px;
+    
+    }
+    #check-out{
+        margin-left: 200px;
+    
+    }
+    #check{
+        position: absolute;
+        margin-left: 90px;
+    }
+    #check-out-guest,#check-out-member{
+        margin-left: 300px;
+        margin-top: -60px;
+        display: none;
+    }
+}
+
+@media(min-width:968px){
+    #check{
+        position: absolute;
+        margin-left: 1300px;
+    }
+    #check-out{
+        margin-left: 650px;
+    
+    }
+    #check-out-guest,#check-out-member{
+        margin-left: 500px;
+        margin-top: -60px;
+        display: none;
+    }
+    .total{
+        position: absolute;
+        margin-left: 700px;
+        font-size: 40px;
+    
+    }
+}

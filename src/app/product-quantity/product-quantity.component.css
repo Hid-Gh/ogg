@@ -1,0 +1,11 @@
+.btnP{
+    left: 400px;
+}
+.yellow{
+    font-size: 25px;
+    color: #fff;
+    border: 1px solid #8bab76;
+    background-color: #373738;
+    margin-left: -15px;
+    box-shadow: 10px 10px 10px  #5f7550;
+}

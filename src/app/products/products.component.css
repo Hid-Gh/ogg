@@ -1,0 +1,27 @@
+
+@media(min-width:300px){
+    input{
+        margin-left: 27vw;
+        width: 200px;
+        border: 1px solid black;
+        margin-top: -1700px;
+    }
+    .col{
+        margin-top: 50px;
+    }
+}
+@media(min-width:500px){
+    input{
+        margin-top: -650px;
+        margin-left: 17vw;
+    }
+
+}
+@media(min-width:968px){
+    input{
+        margin-top: -190px;
+
+        margin-left: 60vw;
+    }
+}
+

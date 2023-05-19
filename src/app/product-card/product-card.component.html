@@ -1,0 +1,28 @@
+
+        <div class="col">
+        <div class="card" style=" height: 450px;">
+          <img src={{product.payload.val().imageUrl}} class="card-img-top" alt="..." style=" height: 13rem; width: 13rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{product.payload.val().title}}</h5>
+            <p class="card-text">{{product.payload.val().calories}}callories        {{product.payload.val().category}}</p>
+            <div class="priceadd">
+              <p class="price">{{product.payload.val().price |currency:'USD'}}</p>
+            </div>
+
+            <div class="card-footer"  *ngIf="showAction" >
+              <div class="d-grid gap-3">
+              <button 
+              *ngIf="shoppingcart?.getQuantity(product) === 0 || shoppingcart?.getQuantity(product) ===null;else updateQuantity"
+              (click)="addtoCart()"
+              ngClass="btn  btn-block yellow" id="addbtn">Add to Cart</button>
+              <ng-template #updateQuantity>
+                <product-quantity [product]="product" [shoppingCart]="shoppingcart" ></product-quantity>
+              </ng-template>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+
+            
+

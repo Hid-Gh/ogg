@@ -1,0 +1,12 @@
+<nav-bar></nav-bar>
+
+<h4 style="margin:30px;margin-left:100px;">Shipping</h4>
+<div class="row" *ngIf= "cart$ | async as cart">
+            <div class="col-9" style="padding-left:100px;">
+              <shipping-form [cart]= "cart" [member]= "false"></shipping-form>
+            </div>
+            <div class="col-3" style="margin-top:30px;padding-right:30px;">
+              <cart-summary [cart]= "cart"></cart-summary>
+            </div>
+          </div>
+          

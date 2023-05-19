@@ -1,0 +1,58 @@
+<div class="sticky-top">
+
+<div class="banner">
+  <a
+  routerLink="/cat"
+  class="p-2"
+  [class.active]= "!category"
+>
+<div class="thumbnail">
+  <img src="assets/allcat.jpg" id="allimg">
+
+</div>
+<p   id="all">All</p> 
+</a>
+  <a
+  *ngFor="let c of category$ |async let i=index "
+  routerLink="/cat"
+  [queryParams]="{category:c.key}"
+  class="p-2"
+  [class.active]= "category === c.payload.val().name"
+  (click)="setRow(i)"
+[ngClass]="{'highlight':selectedIndex === i}"
+>
+<div class="enebreakfast">
+  <div   class="thumbnail">
+    <img [src]=" c.payload.val().imageUrl " id="allimg" alt="">
+  </div>
+</div>
+
+<span class="name" >
+  {{c.payload.val().name}}
+
+</span>
+
+</a>
+
+</div>
+</div>
+<!-- --------------------------------------- -->
+<div class="list-group" id="list">
+
+
+  <!-- Bei queryParams c.name auswählbare Kategorien / bei c.key nicht sowie bei c.$key nicht-->
+ <h1>Categories</h1>
+  <a *ngFor="let c of category$ | async ;let i=index"
+  routerLink= "/cat"
+  [queryParams]="{ category: c.key }"  
+   class="list-group-item list-group-item-action"
+   (click)="setRow(i)"
+[ngClass]="{'minHighlight':selectedIndex === i}"
+   >
+   <div   class="thumbnail">
+    <img [src]=" c.payload.val().imageUrl " id="allimg" alt="">
+  </div>
+
+    {{ c.payload.val().name }}
+  </a>
+</div>  

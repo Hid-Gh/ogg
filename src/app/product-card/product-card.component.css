@@ -1,0 +1,88 @@
+.card{
+    margin: 120px;
+    margin-top: 100px;
+    height: 300px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+}
+.card:hover  {
+    background-color: #8bab76;
+    color: #fff;
+}
+
+.card img{
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+.card .card-title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.card .card-body p{
+    word-spacing: 100px;
+    color: lightgray;
+}
+.card-body .price{
+    margin-top: 5px;
+}
+.priceadd{
+    display: flex;
+}
+.card .card-body .buttons button{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.yellow{
+    color: #fff;
+    border: 1px solid #8bab76;
+    background-color: #373738;
+    box-shadow: 10px 10px 10px  #5f7550;
+}
+@media(min-width:768px){
+    .card{
+        margin: 90px;
+        margin-top: 100px;
+        margin-left: 89px;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        width: 13rem;
+    } 
+    .card img{
+        width: 208px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .card .card-title{
+        font-size: 23px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+@media(min-width:968px){
+    .card{
+        margin: 140px;
+        margin-top: 100px;
+        margin-left: 120px;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        width: 18rem;
+    } 
+    .card .card-title{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .card img{
+        width: 287px;
+        height: 150px;
+        border-radius: 10px;
+    }
+}

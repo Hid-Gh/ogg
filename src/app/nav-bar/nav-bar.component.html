@@ -1,0 +1,41 @@
+
+<div class="c">
+
+</div>
+<div class="container">
+ 
+  <header class="d-flex flex-wrap justify-content-center py-0 mb-1 border-bottom">
+
+  
+  </header>
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li>  <a href="/" id="logo1" class="d-flex align-items-center mb-6 mb-md-1 me-md-auto text-dark text-decoration-none">
+        <img src="assets/logo.png" class="logo" alt="">
+      </a></li>
+        <li class="nav-item" ><a id="active" href=""><fa-icon [icon]="homeIcon" class="shoppingIcon"></fa-icon>
+        </a>
+      </li>
+        <li class="nav-item"><a routerLink="/goToLogin">
+          <label for="cat">
+            <fa-icon [icon]="faperson" class="shoppingIcon"  id="cat"></fa-icon>
+          </label>
+          <input type="checkbox" name="cat" id="cat" class="cat">
+        </a>
+          </li>
+   
+        <li class="nav-item"><a routerLink="/shopping-cart"><fa-icon [icon]="cartIcon" class="shoppingIcon"></fa-icon>
+          <span class="badge rounded-pill " id="pill"  *ngIf="cart$ | async as cart">
+            {{cart.TotalItemCount}}             
+            </span>
+        </a>
+      </li>
+
+    </ul>
+</nav>
+
+</div>
+
+
+    
+   

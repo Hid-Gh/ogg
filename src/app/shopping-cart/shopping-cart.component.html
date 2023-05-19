@@ -1,0 +1,62 @@
+<nav-bar></nav-bar>
+
+
+<div *ngIf="cart$ | async as cart " >
+    
+    <h1 class="cart">Shopping Cart</h1>
+    <button 
+    routerLink ="/products"
+
+                    *ngIf="cart.items.length"    
+                    class="btn btn-light " id="check"   (click)="clearCart()">Clear Cart
+  
+                    </button>
+    <div *ngFor=" let c of cart.items ">
+        <div class="card mb-4" style="max-width: 500px;">
+            <div class="row g- 0">
+              <div class="col-md-6">
+                <img src={{c.imageUrl}} class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Title:</strong> {{c.title}}</h5>
+                  <p class="card-text"><strong>Price:  </strong>{{c.price|currency:'USD'}}</p>
+                  <p class="card-text"><small class="text-body-secondary"> <product-quantity [product]="c" [shoppingCart]="cart"></product-quantity> </small></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+         
+            
+            </div>
+
+                    <div class="buttons">
+
+                     
+                          <input type="checkbox" id="check-out" class="check-out">
+                          <label for="check-out"><a  id="check-out" class="btn">Check Out</a></label>
+
+                        
+                            <a routerLink="/check-out-guest" class="btn" id="check-out-guest">Guest Check out</a>
+                            <a routerLink="/check-out-member" class="btn" id="check-out-member">Member Checkout</a>
+                        </div>
+
+                    
+                   
+      
+      <!-- -------------------------check-out works!------------------------------------ -->
+                  
+      
+                    
+                  
+                 
+                       <hr>
+            <div class="box">
+                <p class="text-end  total"> Total Price : <strong>{{cart.TotalPrice | currency :'USD'}}</strong> </p>
+            </div>
+          </div>
+
+         
+         
+

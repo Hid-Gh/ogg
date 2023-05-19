@@ -1,0 +1,157 @@
+.section2{
+    width: 80%;
+    margin: auto;
+    padding: 100px;
+}
+.section2 h1 strong{
+    top: -10px;
+    color: #5f7550;
+}
+.section2 h1{
+    font-size: 60px;
+        margin-left: 400px;
+        margin-top: -80px;
+}
+
+#sendEmail {
+    padding-top: 20px;
+    width: 60px;
+    height: 68px;
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+
+/* ----------------------------contactus---------------------- */
+.contact-col{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    width: 25%;
+    margin-left: 1000px;
+    padding: 10px 20px;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+    color:#5f7550 ;
+    background-color: #fff;
+    margin-left: 90px;
+    font-size: 18px;
+    border: 1px solid #5f7550;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px  #5f7550;
+}
+.btn:hover{
+    background-color:#5f7550 ;
+    color: #fff;
+}
+input,textarea{
+
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.mySlides{
+    width: 1400px;
+    height: 500px;
+        margin-top: 30px;
+        margin-left: 100px;
+        border-radius: 25px;
+}
+.overlay{
+    width: 92.3%;
+    height: 67vh;
+    border-radius: 25px;
+
+    background: linear-gradient(#373738,rgba(237, 221, 221, 0.7));
+    position: absolute;
+    top: 116px;
+    left: 100px;
+
+}
+.location h1{
+    color: #5f7550;
+}
+.light{
+    display: flex;
+    flex-direction: row;
+    margin-left: 700px;
+
+}
+.light img{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-bottom: 90px;
+}
+
+@media(max-width:700px){
+    .mySlides{
+        width: 390px;
+        height: 400px;
+            margin-left: 90px;
+    }
+    .overlay{
+        width: 81%;
+        height: 57.5vh;
+        border-radius: 25px;
+    
+        background: linear-gradient(#373738,rgba(237, 221, 221, 0.7));
+        position: absolute;
+        top: 116px;
+        left: 90px;
+    
+    }
+    .section2 h1{
+        font-size: 60px;
+            margin-left: 20px;
+            margin-top: -110px;
+    }
+    .section2 h1 strong{
+        font-size: 60px;
+            margin-left: 70px;
+            margin-top: -80px;
+    }
+    .location h1{
+        margin-left: 150px;
+        color: #5f7550;
+
+    }
+    input,textarea{
+
+        width: 100%;
+        padding: 15px;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-bottom: 17px;
+        outline: none;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    .location iframe{
+        width: 97%;
+        margin-left: 50px;
+
+    }
+    .contact-col{
+        width: 70%;
+        margin-left: 100px;
+    }
+    .light{
+        
+        margin-left: 100px;
+    
+    }
+}
+

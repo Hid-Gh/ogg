@@ -1,0 +1,19 @@
+<div class="card" style=" box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #303b29;
+border-color: #4b5c3f;">
+            <div class="card-body">
+              <h5 class="card-title">Order Summary</h5>
+              <p class="card-text">You have {{cart?.TotalItemCount}} items in your shopping cart</p>
+              <ul class="list-group list-group-flush">
+                        <li *ngFor= "let item of cart.items" class="list-group-item">
+                                    {{item.quantity}} x {{item.title}}
+                                    <div class="float-end">{{item.totalPrice | currency:'USD':true}}</div>
+                        </li>
+                        <li class="list-group-item fw-bold">
+                                    Total
+                                    <div class="float-end">
+                                                {{cart.TotalPrice | currency:'USD':true}}
+                                    </div>
+                        </li>
+              </ul>
+            </div>
+</div>
